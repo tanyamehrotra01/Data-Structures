@@ -1,0 +1,52 @@
+Maximum number of nodes at a level l is 2^(l-1)
+eg. for root, level = 1, no. of nodes = 1
+	Since it is a binary tree, the next level would have twict the number of nodes in the previous level, 2 * 2^(l-1)
+
+Maximum nodes at height h is (2^h) - 1
+Height of root is considered as 1
+Explanation : 1 + 2 + 4 + ... + 2^(h-1) = (2^h) - 1
+
+In a Binary Tree with N nodes, minimum possible height or minimum number of levels is ⌈ Log2(N+1) ⌉ – 1
+
+A Binary Tree with L leaves has at least   ⌈ Log2L ⌉ + 1   levels
+
+Number of leaf nodes is always one more than nodes with two children
+L = T + 1
+where, L = Number of leaf nodes
+	   T = Number of internal nodes having two children
+
+Full Binary Tree : Every node has 0 or 2 children. 
+
+Complete Binary Tree : All levels are completely filled except possibly the last level and the last level has all keys as left as possible. eg. Heap
+
+Perfect Binary Tree : All internal nodes have two children and all leaves are at the same level.
+
+Balanced Binary Tree : Height of the tree is O(log n)
+eg. AVL Trees maintain O(log n) heihgt by ensuring the difference between the the height of left and right subtree is 1.
+	Red-Black Trees maintain O(log n) height by ensuring that the number of Black nodes on every root to leaf paths are same and there are no adjacent red nodes.
+BST provide O(log n) time for search, insert and delete.
+
+Degenerate Tree : every internal node has one child. Performance is same as linked list.
+
+Handshaking Lemma : In every finite undirected graph, the number of vertices with odd degree is always even. 
+1) In a k-ary tree where every node has 0 or k children, L = (k-1)I + 1
+where,L = Number of leaf nodes
+	  I = Number of internal nodes
+
+2) In Binary tree, L = T + 1
+
+Why Trees:
+1) Hierarchical storage of data. eg. file system.
+2) Self balancing search (AVL, Red-Black) O(log n) time
+
+3) Insertion/deletion in moderate time (quicker than arrays and slower than unordered linked lists)
+
+4) No upper limit on number of nodes.
+
+Application of Trees :
+1) Manipulate hierarchial data
+2)Make search easier
+3)Manipulate sorted lists of data
+4)Router algorithms
+5)As a workflow for composing digital images for visual effects
+
